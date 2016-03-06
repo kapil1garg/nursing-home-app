@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.litongwang.airport.select"
+    tools:showIn="@layout/select">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_message1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_gravity="left"
+                android:layout_column="0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_message2"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_gravity="left"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dip">
+
+            <RadioGroup
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toilet_button1"
+                    android:text="@string/toileting"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shower_button1"
+                    android:text="@string/shower"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dressing_button1"
+                    android:text="@string/dressing"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prepare_button1"
+                    android:text="@string/prepare_food"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/others_button1"
+                    android:text="@string/others"
+                    android:onClick="selectActivity"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toilet_button2"
+                    android:text="@string/toileting"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shower_button2"
+                    android:text="@string/shower"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dressing_button2"
+                    android:text="@string/dressing"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prepare_button2"
+                    android:text="@string/prepare_food"
+                    android:onClick="selectActivity"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/others_button2"
+                    android:text="@string/others"
+                    android:onClick="selectActivity"
+                    />
+            </RadioGroup>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/result_text"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instruction"
+                android:text="Current Activity Lasts:"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_span="2"
+                android:layout_gravity="center_horizontal" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/duration"
+                android:hint="Enter in minutes"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user"
+                android:text="Was it you?"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yes_button"
+                    android:text="Yes"
+                    android:onClick="selectActivity"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/no_button"
+                    android:text="No"
+                    android:onClick="selectActivity"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:id="@+id/submit_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

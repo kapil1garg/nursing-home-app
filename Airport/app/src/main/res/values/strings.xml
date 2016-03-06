@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nursing home</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_message1">Current activity</string>
+    <string name="title_message2">Previous activity</string>
+    <string name="toileting">Toileting</string>
+    <string name="shower">Shower</string>
+    <string name="prepare_food">Food preparation</string>
+    <string name="dressing">Dressing</string>
+    <string name="others">Others</string>
+    <string name="time_duration"></string>
+    <string name="maintitle_message">main page</string>
+</resources>
