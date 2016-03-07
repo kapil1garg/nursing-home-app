@@ -38,7 +38,8 @@
     <!-- Required to scan for and connect to Estimote Beacons via Bluetooth. -->
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permision android name="android.permission.READ_PHONE_STATE"/>
+
     <!-- Required for BLE scanning on Android 6.0 and above. -->
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
